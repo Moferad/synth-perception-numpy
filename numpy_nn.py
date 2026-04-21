@@ -157,15 +157,15 @@ def train(X, Y, n_h, learning_rate=0.01, num_iterations=1000, print_cost=True):
     
     return parameters, costs
 
-    def predict(X,parameters):
-        
-        W1 = parameters["W1"]
-        b1 = parameters["b1"]
-        W2 = parameters["W2"]
-        b2 = parameters["b2"]
+def predict(X,parameters):
+
+    W1 = parameters["W1"]
+    b1 = parameters["b1"]
+    W2 = parameters["W2"]
+    b2 = parameters["b2"]
     
-        A1, cache1 = linear_activation_forward(X,W1,b1,"relu")
-        A2, cache2 = linear_activation_forward(A1,W2,b2,"sigmoid")
-        predictions = (A2 > 0.5).astype(int)
+    A1, cache1 = linear_activation_forward(X,W1,b1,"relu")
+    A2, cache2 = linear_activation_forward(A1,W2,b2,"sigmoid")
+    predictions = (A2 > 0.5).astype(int)
     
-        return predictions
+    return predictions
