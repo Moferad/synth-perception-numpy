@@ -30,6 +30,18 @@ pip install -r requirements.txt
 python main.py
 ```
 
+## Folder Structure
+
+data/
+├── tomato/
+│   ├── img1.jpg
+│   ├── img2.jpg
+│   └── img3.jpg
+└── corn/
+    ├── img1.jpg
+    ├── img2.jpg
+    └── img3.jpg
+
 ## Stack
 - Python 3
 - NumPy
