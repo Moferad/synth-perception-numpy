@@ -30,8 +30,8 @@ pip install -r requirements.txt
 python main.py
 ```
 
-## Folder Structure
-
+## Data Structure
+```
 data/
 ├── tomato/
 │   ├── img1.jpg
@@ -41,6 +41,7 @@ data/
     ├── img1.jpg
     ├── img2.jpg
     └── img3.jpg
+```
 
 ## Stack
 - Python 3
